@@ -1,6 +1,6 @@
 {
   "name": "slop-sentry",
-  "version": "1.10.0",
+  "version": "1.12.0",
   "description": "Slop Sentry checks a draft for thin claims, try-hard language, and AI-sounding patterns, then returns a cleaned version. Connect the remote server and approve access in the browser with your Slop Sentry account.",
   "author": {
     "name": "Slop Sentry",

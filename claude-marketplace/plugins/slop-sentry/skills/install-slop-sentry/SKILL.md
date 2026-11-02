@@ -1,6 +1,6 @@
 ---
 name: install-slop-sentry
-description: Connect the Slop Sentry MCP server to the AI apps on this machine. Use when someone asks to install, connect, add, or set up Slop Sentry in Claude, Claude Code, Cowork, ChatGPT, Codex, Cursor, Gemini, VS Code, or Suits.ai.
+description: Connect the Slop Sentry MCP server to the AI apps on this machine. Use when someone asks to install, connect, add, or set up Slop Sentry in Claude, Claude Code, Cowork, ChatGPT, Codex, Cursor, Gemini, Antigravity, VS Code, or Suits.ai.
 ---
 
 # Install Slop Sentry
@@ -23,6 +23,7 @@ An account key is only for the CLI, CI, or an app that still has no browser sign
 | Codex | `codex` on `PATH`, or `~/.codex` |
 | Cursor | `cursor` on `PATH`, `~/.cursor`, or the Cursor app |
 | Gemini CLI | `gemini` on `PATH`, or `~/.gemini` |
+| Antigravity | `agy` on `PATH`, Antigravity app, or `~/.gemini/antigravity` |
 | VS Code | `code` on `PATH` |
 | Suits.ai | No local binary. Give the user the form fields below. |
 
@@ -123,6 +124,30 @@ Merge this into `~/.gemini/settings.json`, then restart the CLI:
   }
 }
 ```
+
+### Antigravity
+
+If a built Antigravity package exists at `dist/plugins/antigravity/slop-sentry` in a checkout of this repo:
+
+```bash
+agy plugin validate --strict dist/plugins/antigravity/slop-sentry
+agy plugin install dist/plugins/antigravity/slop-sentry
+agy plugin list
+```
+
+Otherwise install from the public plugins repo once published, or merge the same remote URL into the Antigravity / Gemini MCP settings:
+
+```json
+{
+  "mcpServers": {
+    "slop-sentry": {
+      "url": "https://mcp.slopsentry.ai"
+    }
+  }
+}
+```
+
+Complete browser sign-in when the MCP server connects. In the Antigravity App, plugins also appear under Customizations → Installed / Marketplace.
 
 ### VS Code
 

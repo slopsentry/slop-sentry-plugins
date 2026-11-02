@@ -9,7 +9,7 @@
       "name": "slop-sentry",
       "source": "./plugins/slop-sentry",
       "description": "Checks a draft for AI tells and returns a cleaned version.",
-      "version": "1.10.0"
+      "version": "1.12.0"
     }
   ]
 }

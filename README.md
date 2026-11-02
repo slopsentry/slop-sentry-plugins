@@ -23,7 +23,9 @@ Slop Sentry checks writing drafts for thin claims, try-hard or hokey language, a
 │               └── install-slop-sentry/
 │                   └── SKILL.md           # Instructions for configuring Slop Sentry across AI clients
 ├── dist/
-│   └── slop-sentry-claude.zip             # Packaged plugin archive for direct upload to Claude Cowork
+│   ├── slop-sentry-claude.zip             # Claude / Cowork plugin archive
+│   ├── slop-sentry-codex.zip              # Codex / ChatGPT desktop plugin archive
+│   └── slop-sentry-antigravity.zip        # Antigravity plugin archive
 └── README.md
 ```
 
@@ -36,7 +38,7 @@ Slop Sentry checks writing drafts for thin claims, try-hard or hokey language, a
   - `.mcp.json`: Configures the remote MCP endpoint (`https://mcp.slopsentry.ai`).
   - `skills/slop-sentry`: The primary workflow skill for drafting, editing, quality checks, substance checks, hokiness checks, and visual diff reviews.
   - `skills/install-slop-sentry`: Setup instructions for connecting the MCP server to supported local and desktop clients.
-- **`dist/`**: Pre-built distribution archives. `slop-sentry-claude.zip` is ready for direct upload to Claude Cowork environments where custom marketplace URLs are not configured.
+- **`dist/`**: Pre-built distribution archives for Claude/Cowork (`slop-sentry-claude.zip`), Codex/ChatGPT desktop (`slop-sentry-codex.zip`), and Antigravity (`slop-sentry-antigravity.zip`). Upload the matching archive when a client cannot use the marketplace catalog.
 
 ## Installation
 
